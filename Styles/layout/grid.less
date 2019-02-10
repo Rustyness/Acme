@@ -1,0 +1,70 @@
+@import "../base/responsive.less";
+@import "../base/colors.less";
+@import "../base/typography.less";
+@import "../components/buttons.less";
+
+.l-collab {
+    margin-top: 20px;
+    min-height: 780px;
+
+    &__title,  &__subTitle {
+        color: lighten(@black, 20%);
+    }
+
+    &__title {
+        margin: 0 0 5px;
+        font-size: @size5x;
+        font-weight: @bold;
+    }
+
+    &__subTitle {
+        font-size: @size3x;
+        font-weight: @regular;
+    }
+    
+    &__person {
+        margin-top: 10px;
+        font-size: @size3x + 0.2;
+        font-weight: @regular;
+        background: @white;
+        border-radius: 3px;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+
+        a {
+            color: lighten(@black, 5%);
+
+            &:hover {
+                color: lighten(@primary, 5%);
+            }
+        }
+
+        i {
+            margin-right: 10px;
+            color: lighten(@primary, 10%);
+        }
+
+        div.hold {
+            padding: 0 10px 10px;
+        }
+
+        &__holderImg {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__name {
+            margin-top: 10px;
+            padding: 0 10px;
+            text-transform: capitalize;
+            font-size: @size5x;
+            font-weight: @bold;
+            color: lighten(@black, 5%);
+        }
+
+        &__user {
+            font-size: @size3x;
+            color: lighten(@black, 20%);
+        }
+    }
+}

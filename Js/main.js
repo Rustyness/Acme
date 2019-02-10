@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: 'https://randomuser.me/api/?results=10',
+        url: 'https://randomuser.me/api/?results=9',
         dataType: 'json',
         success: function (data) {
             for (var i = 0; i < data.results.length; i++) {
